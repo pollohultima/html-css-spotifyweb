@@ -37,9 +37,23 @@ a {
     width: 230px;
     height: calc(100vh - 90px);
     background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* actions style */
+
+.actions {
+    width: 100%;
+}
+
+.logo {
+    width: 70%;
+}
+
+.logo img {
+    fill: white;
+}
 
 /************************ Main Style ************************/
 
