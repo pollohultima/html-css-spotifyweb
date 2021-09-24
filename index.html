@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -17,6 +21,25 @@
             <aside class="sidebar d-flex">
                 <div class="actions">
                     <div class="logo"><img src="./img/logo.svg" alt=""></div>
+                    <div class="home clearfix">
+                        <img src="./img/home.svg" alt="" class="icon">
+                        <h5>Home</h5>
+                    </div>
+                    <div class="search clearfix">
+                        <img src="./img/search.svg" alt="" class="icon">
+                        <h5>Cerca</h5>
+                    </div>
+                    <div class="library clearfix">
+                        <img src="./img/libreria.svg" alt="" class="icon">
+                        <h5>La tua libreria</h5>
+                    </div>
+                    <div class="playlists">
+                        <h4>PLAYLIST</h4>
+                        <div class="new clearfix">
+                            <i class="fas fa-plus-square icon"></i>
+                            <h4>Crea Playlist</h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="user"></div>
             </aside>
@@ -28,7 +51,7 @@
                 </div>
                 <div class="overflow_container">
                     <nav class="navbar d-flex">
-                        <a href="" id="selected">IN EVIDENZA <span
+                        <a href="" class="selected">IN EVIDENZA <span
                                 id="underline"></span> </a>
                         <a href="">PODCAST</a>
                         <a href="">CLASSIFICHE</a>
@@ -103,7 +126,7 @@
                             </div>
                             <div class="item d-flex">
                                 <img src="./img/einaudi.jpeg" alt="">
-                                <a href="" class="song">Ludovico Enaudi</h3>
+                                <a href="" class="song">Ludovico Enaudi</a>
                             </div>
                         </div>
                     </div>
