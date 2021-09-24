@@ -82,6 +82,15 @@ a {
     color: white;
 }
 
+#leftlined {
+    height: 35px;
+    width: 3px;
+    background-color: #adff2f;
+    position: absolute;
+    right: 83px;
+    top: -7.5px
+}
+
 .playlists {
     margin-top: 25px;
 }
@@ -239,6 +248,7 @@ li a {
 
 .space {
     width: 65%;
+    min-width: 390px;
 }
 
 .recent, .for_you, .popular {
@@ -412,4 +422,16 @@ li a {
 
 a i {
     color: white;
+}
+
+/* Media Query */
+
+@media screen and (max-width:878px) {
+    .recent .item_wrapper {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .item {
+        width: 130px;
+    }
 }
