@@ -120,7 +120,7 @@
                         <h2>Creato per John Doe</h2>
                         <div class="subtitle">Più ascolti, più accurati saranno
                             i seggerimenti.</div>
-                        <div class="item_wrapper d-flex">
+                        <div class="item_wrapper small d-flex">
                             <div class="item d-flex">
                                 <img src="./img/radar.jpeg" alt="">
                                 <a href="" class="song">Release Radar</a>
@@ -130,6 +130,7 @@
                                 <img src="./img/mixdaily.jpeg" alt="">
                                 <a href="" class="song">Daily Mix 1</a>
                             </div>
+                            <div class="space"></div>
                         </div>
                     </div>
                     <!-- /creato per te -->
@@ -138,7 +139,7 @@
                         <h2>Artisti più popolari</h2>
                         <div class="subtitle">Più ascolti, più accurati saranno
                             i seggerimenti.</div>
-                        <div class="item_wrapper d-flex">
+                        <div class="item_wrapper small d-flex">
                             <div class="item d-flex">
                                 <img src="./img/youg.jpeg" alt="">
                                 <a href="" class="song">Lana del Rey</a>
@@ -147,6 +148,7 @@
                                 <img src="./img/einaudi.jpeg" alt="">
                                 <a href="" class="song">Ludovico Enaudi</a>
                             </div>
+                            <div class="space"></div>
                         </div>
                     </div>
                     <!-- /artisti popolari -->
@@ -155,8 +157,8 @@
             <!-- /.main_container -->
 
             <section class="now_playing d-flex">
-                <div class="track d-flex">
-                    <div class="track_now d-flex">
+                <div class="left d-flex">
+                    <div class="track d-flex">
                         <div class="thumbnail">
                             <img src="./img/sinister.jpeg" alt="">
                         </div>
@@ -165,15 +167,35 @@
                             <div class="track_artist">Brano Nome</div>
                         </div>
                     </div>
-                    <div class="track_icons">
+                    <div class="track_icons d-flex">
                         <a href=""><i class="far fa-heart"></i></a>
                         <a href=""><i class="far fa-folder"></i></a>
                     </div>
                 </div>
-                <div class="player">
-
+                <div class="player d-flex">
+                    <div class="player_buttons d-flex">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="timeline d-flex">
+                        <div class="past time">0:25</div>
+                        <div class="timebar">
+                            <div class="slider"></div>
+                        </div>
+                        <div class="time">4:35</div>
+                    </div>
                 </div>
-                <div class="volume"></div>
+                <div class="right d-flex">
+                    <a href=""><i class="fas fa-list-ul"></i></a>
+                    <a href=""><i class="fas fa-desktop"></i></a>
+                    <a href=""><i class="fas fa-volume-up"></i></a>
+                    <div class="volume">
+                        <div class="slider"></div>
+                    </div>
+                </div>
             </section>
             <!-- /.now_playing -->
         </div>

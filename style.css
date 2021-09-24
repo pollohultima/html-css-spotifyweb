@@ -24,6 +24,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -228,8 +229,16 @@ li a {
 /* Recently played style */
 
 .item_wrapper {
-    justify-content: left;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.small {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.space {
+    width: 65%;
 }
 
 .recent, .for_you, .popular {
@@ -280,17 +289,21 @@ li a {
 
 /************************ Now_playing style ************************/
 
+/* Left style */
+
 .now_playing {
     width: 100%;
     height: 90px;
     background-color: #282828;
+    justify-content: space-between;
 }
 
-.track {
+.left {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     width: 230px;
+    min-width: 170px;
 }
 
 .thumbnail {
@@ -317,10 +330,86 @@ li a {
     color: #717171;
 }
 
-.track_icons a {
-    color: #717171;
+.track_icons {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.fa-folder {
-    margin-left: 10px;
+.track_icons a {
+    color: #717171;
+    margin: 0 5px;
+}
+
+/* Player style */
+
+.player {
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player_buttons {
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player_buttons i {
+    color: white;
+}
+
+.fa-play-circle {
+    font-size: 30px;
+}
+
+.timeline {
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    width: 35vw;
+}
+
+.time {
+    font-size: 10px;
+    color: white;
+}
+
+.timebar {
+    width: 85%;
+    height: 4px;
+    background-color: #717171;
+    border-radius: 2px;
+    margin: 0 5px;
+}
+
+.slider {
+    width: 25%;
+    height: 4px;
+    background-color: #a3a3a3;
+}
+
+/* Right style */
+
+.right {
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    width: 200px;
+}
+
+.volume {
+    width: 100%;
+    height: 4px;
+    background-color: #717171;
+    border-radius: 2px;
+}
+
+.right i {
+    margin: 0 5px;
+}
+
+a i {
+    color: white;
 }
