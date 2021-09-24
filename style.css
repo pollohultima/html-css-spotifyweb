@@ -202,7 +202,6 @@ li a {
 }
 
 .overflow_container {
-    box-sizing: content-box;
     overflow-y: auto;
     overflow-x: hidden;
     height: calc(100vh - 180px);
@@ -239,25 +238,21 @@ li a {
 
 .item_wrapper {
     justify-content: space-between;
-}
-
-.small {
-    justify-content: space-between;
     width: 100%;
 }
 
-.space {
-    width: 65%;
-    min-width: 390px;
+.small {
+    justify-content: left;
+    width: 100%;
 }
 
 .recent, .for_you, .popular {
-    padding: 15px;
+    margin: 15px;
     color: white;
 }
 
 .item {
-    width: 180px;
+    width: calc(100% / 6 - 13px);
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
@@ -311,8 +306,8 @@ li a {
 .left {
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    width: 230px;
+    margin: 10px;
+    width: 210px;
     min-width: 170px;
 }
 
@@ -357,6 +352,7 @@ li a {
     height: 90px;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0 20px;
 }
 
 .player_buttons {
@@ -407,6 +403,7 @@ li a {
     align-items: center;
     margin: 0 10px;
     width: 200px;
+    min-width: 135px;
 }
 
 .volume {
@@ -432,6 +429,33 @@ a i {
         justify-content: left;
     }
     .item {
-        width: 130px;
+        width: calc(100% / 4 - 13px)
+    }
+}
+
+@media screen and (max-width:639px) {
+    .item {
+        width: calc(100% / 2 - 13px)
+    }
+    .track_icons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:552px) {
+    .sidebar {
+        width: 50px;
+    }
+    .main_container {
+        width: calc(100% - 50px);
+    }
+    .playlists {
+        display: none
+    }
+    .actions {
+        visibility: hidden;
+    }
+    .icon {
+        visibility: visible;
     }
 }
