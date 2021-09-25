@@ -132,6 +132,15 @@ li a {
     font-size: 12px;
 }
 
+.minilogo {
+    fill: white;
+    width: 30px;
+}
+
+.mini {
+    display: none;
+}
+
 /* User style */
 
 .user {
@@ -308,7 +317,6 @@ li a {
     justify-content: space-between;
     margin: 10px;
     width: 210px;
-    min-width: 170px;
 }
 
 .thumbnail {
@@ -403,7 +411,6 @@ li a {
     align-items: center;
     margin: 0 10px;
     width: 200px;
-    min-width: 135px;
 }
 
 .volume {
@@ -449,13 +456,33 @@ a i {
     .main_container {
         width: calc(100% - 50px);
     }
-    .playlists {
+    .mini {
+        display: flex;
+    }
+    .playlists, .actions, .user {
         display: none
     }
-    .actions {
-        visibility: hidden;
+    .install, .profile {
+        border: none;
+        padding: 0;
+        margin: 0;
     }
     .icon {
-        visibility: visible;
+        margin: 0;
+    }
+    .mini {
+        flex-direction: column;
+    }
+    .up {
+        height: 145px;
+        width: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .down {
+        height: 80px;
+        width: 50px;
+        justify-content: space-around;
+        align-items: center;
     }
 }
