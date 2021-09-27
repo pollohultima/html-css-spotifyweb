@@ -67,6 +67,14 @@ a {
     margin-bottom: 10px;
 }
 
+.library a:hover, .search a:hover, .new a:hover, .new:hover .icon, li a:hover, .install:hover a, .fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
+.home:hover .icon, .search:hover .icon, .library:hover .icon, .install:hover .icon {
+    filter: none;
+}
+
 .icon {
     width: 20px;
     float: left;
@@ -133,6 +141,7 @@ li {
 li a {
     color: #717171;
     font-size: 12px;
+    transition: all linear;
 }
 
 .minilogo {
@@ -212,8 +221,13 @@ li a {
     color: white;
     border: 1px solid white;
     border-radius: 30px;
-    margin-right: .5%;
+    margin-right: 20px;
     font-size: .8rem;
+    transition: all linear;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .overflow_container {
@@ -234,6 +248,11 @@ li a {
 .navbar a {
     color: #717171;
     padding: 20px 7px;
+    transition: all linear;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 .selected {
@@ -372,14 +391,18 @@ li a {
     margin-left: 12px;
 }
 
-.track_name {
+.track_name a {
     font-size: 11px;
     color: white;
 }
 
-.track_artist {
+.track_artist a {
     font-size: 10px;
     color: #717171;
+}
+
+.track_artist:hover a {
+    text-decoration: underline;
 }
 
 .track_icons {
@@ -415,6 +438,10 @@ li a {
     font-size: 30px;
 }
 
+a .fa-play-circle:hover {
+    transform: scale(1.1);
+}
+
 .timeline {
     justify-content: space-between;
     align-items: center;
@@ -435,15 +462,34 @@ li a {
     margin: 0 5px;
 }
 
+.timebar:hover, .volume:hover {
+    cursor: pointer;
+}
+
+.timebar:hover .slider, .volume:hover .slider {
+    background-color: yellowgreen;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: -7.5px;
+    bottom: -5.5px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
+}
+
+.timebar:hover .circle, .volume:hover .circle {
+    display: block;
+}
+
 .slider {
     width: 25%;
     height: 4px;
     background-color: #a3a3a3;
-}
-
-.slider a {
-    width: 100%;
-    height: 4px;
+    position: relative;
 }
 
 /* Right style */
