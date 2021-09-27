@@ -95,6 +95,7 @@ a {
 
 .playlists {
     margin-top: 25px;
+    height: 100%;
 }
 
 .playlists>h4 {
@@ -277,8 +278,34 @@ li a {
     width: 100%;
 }
 
+.item img {
+    transition: all linear;
+}
+
+.item:hover img {
+    filter: brightness(.5);
+}
+
+.item:hover i {
+    visibility: visible;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+}
+
+.cover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -57%);
+    font-size: 50px;
+    visibility: hidden;
+}
+
 .song {
-    padding-top: 20px;
+    padding-top: 17px;
     padding-bottom: 10px;
     font-size: 14px;
     color: white;
