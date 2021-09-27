@@ -19,7 +19,7 @@
     <body>
         <div class="body_container d-flex">
             <aside class="sidebar d-flex">
-                <div class="actions">
+                <div class="menu">
                     <div class="logo"><img src="./img/logo.svg" alt=""></div>
                     <div class="home clearfix">
                         <img src="./img/home.svg" alt="" class="icon">
@@ -34,24 +34,25 @@
                         <img src="./img/libreria.svg" alt="" class="icon">
                         <a href="">La tua libreria</a>
                     </div>
-                    <div class="playlists">
-                        <h4>PLAYLIST</h4>
-                        <div class="new clearfix">
-                            <i class="fas fa-plus-square icon"></i>
-                            <a href="">Crea Playlist</a>
-                        </div>
-                        <ul>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-
-                        </ul>
-                    </div>
                 </div>
+                <div class="playlists">
+                    <div class="new clearfix">
+                        <h4>PLAYLIST</h4>
+                        <i class="fas fa-plus-square icon"></i>
+                        <a href="">Crea Playlist</a>
+                    </div>
+                    <ul>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+
+                    </ul>
+                </div>
+
                 <div class="user">
                     <div class="install">
                         <img src="./img/download.svg" alt="" class="icon">
@@ -257,52 +258,52 @@
             </main>
             <!-- /.main_container -->
 
-            <section class="now_playing d-flex">
-                <div class="left d-flex">
-                    <div class="track d-flex">
-                        <div class="thumbnail">
-                            <img src="./img/sinister.jpeg" alt="">
-                        </div>
-                        <div class="track_info d-flex">
-                            <div class="track_name"><a href="">Sinister</a></div>
-                            <div class="track_artist"><a href="">Brano Nome</a></div>
-                        </div>
+        </div>
+        <div class="now_playing d-flex">
+            <div class="left d-flex">
+                <div class="track d-flex">
+                    <div class="thumbnail">
+                        <img src="./img/sinister.jpeg" alt="">
                     </div>
-                    <div class="track_icons d-flex">
-                        <a href=""><i class="far fa-heart"></i></a>
-                        <a href=""><i class="far fa-folder"></i></a>
+                    <div class="track_info d-flex">
+                        <div class="track_name"><a href="">Sinister</a></div>
+                        <div class="track_artist"><a href="">Brano Nome</a></div>
                     </div>
                 </div>
-                <div class="player d-flex">
-                    <div class="player_buttons d-flex">
-                        <a href=""><i class="fas fa-random"></i></a>
-                        <a href=""><i class="fas fa-step-backward"></i></a>
-                        <a href=""><i class="far fa-play-circle"></i></a>
-                        <a href=""><i class="fas fa-step-forward"></i></a>
-                        <a href=""><i class="fas fa-redo"></i></a>
-                    </div>
-                    <div class="timeline d-flex">
-                        <div class="past time">0:25</div>
-                        <div class="timebar">
-                            <div class="slider">
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                        <div class="time">4:35</div>
-                    </div>
+                <div class="track_icons d-flex">
+                    <a href=""><i class="far fa-heart"></i></a>
+                    <a href=""><i class="far fa-folder"></i></a>
                 </div>
-                <div class="right d-flex">
-                    <a href=""><i class="fas fa-list-ul"></i></a>
-                    <a href=""><i class="fas fa-desktop"></i></a>
-                    <a href=""><i class="fas fa-volume-up"></i></a>
-                    <div class="volume">
+            </div>
+            <div class="player d-flex">
+                <div class="player_buttons d-flex">
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href=""><i class="fas fa-step-backward"></i></a>
+                    <a href=""><i class="far fa-play-circle"></i></a>
+                    <a href=""><i class="fas fa-step-forward"></i></a>
+                    <a href=""><i class="fas fa-redo"></i></a>
+                </div>
+                <div class="timeline d-flex">
+                    <div class="past time">0:25</div>
+                    <div class="timebar">
                         <div class="slider">
                             <div class="circle"></div>
                         </div>
                     </div>
+                    <div class="time">4:35</div>
                 </div>
-            </section>
-            <!-- /.now_playing -->
+            </div>
+            <div class="right d-flex">
+                <a href=""><i class="fas fa-list-ul"></i></a>
+                <a href=""><i class="fas fa-desktop"></i></a>
+                <a href=""><i class="fas fa-volume-up"></i></a>
+                <div class="volume">
+                    <div class="slider">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- /.now_playing -->
     </body>
 </html>

@@ -1,4 +1,4 @@
-/************************ Common ************************/
+/************************Common************************/
 
 * {
     padding: 0;
@@ -13,7 +13,7 @@
 
 .body_container {
     width: 100%;
-    flex-wrap: wrap;
+    height: calc(100vh - 90px);
 }
 
 .clearfix {
@@ -25,6 +25,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    height: 100vh;
 }
 
 a {
@@ -36,21 +37,13 @@ a {
 
 .sidebar {
     width: 230px;
-    height: calc(100vh - 90px);
+    height: 100%;
     background-color: black;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-height: 475px;
-    position: relative;
+    padding: 20px;
 }
 
 /* actions style */
-
-.actions {
-    width: 100%;
-    padding: 20px;
-}
 
 .logo {
     width: 70%;
@@ -102,26 +95,27 @@ a {
 }
 
 .playlists {
-    margin-top: 25px;
+    margin-top: 15px;
     height: 100%;
+    overflow: hidden;
 }
 
-.playlists>h4 {
+.new>h4 {
     color: white;
     font-size: 14px;
-    margin-bottom: 10px;
 }
 
 .new {
     line-height: 42px;
     vertical-align: middle;
-    margin-bottom: 20px;
+    height: 60px;
 }
 
 .fa-plus-square {
     font-size: 42px;
     width: 37px;
     color: #a3a3a3;
+    margin-bottom: 15px;
 }
 
 .new a {
@@ -132,6 +126,8 @@ a {
 
 ul {
     list-style: none;
+    height: calc(100% - 98px);
+    overflow: auto;
 }
 
 li {
@@ -156,12 +152,9 @@ li a {
 /* User style */
 
 .user {
-    padding: 5px 20px;
     color: #717171;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: black;
+    height: 45px;
+    margin-top: auto;
 }
 
 .install {
@@ -203,6 +196,7 @@ li a {
 
 .main_container {
     width: calc(100% - 230px);
+    height: 100%;
     background-color: #141922;
 }
 
@@ -365,9 +359,8 @@ li a {
     height: 90px;
     background-color: #282828;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    z-index: 1;
+    position: relative;
 }
 
 .left {
@@ -576,12 +569,5 @@ a i {
         width: 50px;
         justify-content: space-around;
         align-items: center;
-    }
-}
-
-@media screen and (max-height:750px) {
-    ul {
-        overflow: auto;
-        height: 38vh;
     }
 }
